@@ -22,7 +22,5 @@ function nechet(arr) {
     // Возвращаем сумму нечетных чисел
     return sum_nech;
 }
-// Задаем функцию "nechet(arr)"  значением "result"
-let result = nechet(arr);
 // Выводим результат добавляя значение "result"
-console.log('Сумма нечетных чисел: ' + result);
+console.log('Сумма нечетных чисел: ' + nechet(arr));
