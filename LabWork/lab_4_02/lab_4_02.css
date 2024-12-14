@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7e4911; /* Цвет для основной кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #542f08; /* Цвет при наведении */
+}
+
+.preset-buttons {
+    display: flex;
+    justify-content: space-between; /* Распределяем кнопки по ширине */
+}
+
+.preset-buttons .preset {
+    flex-grow: 1; /* Кнопки занимают равное пространство */
+    margin-right: 5px; /* Отступ между кнопками */
+    background-color: #878515; /* Цвет кнопок предустановленных значений */
+    color: white; /* Цвет текста на кнопках */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругляем углы */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Плавный переход для цвета и тени */
+}
+
+.preset-buttons .preset:last-child {
+    margin-right: 0; /* Убираем отступ у последней кнопки */
+}
+
+/* Эффект наведения для кнопок предустановленных значений */
+.preset-buttons .preset:hover {
+    background-color: #5e5c0c; /* Цвет фона при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+#calculateBtn {
+    margin-top: 20px; /* Отступ сверху для кнопки "Рассчитать" */
+}
+
+#result {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+}
