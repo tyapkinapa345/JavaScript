@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4eae1;
+}
+
+h1 {
+    text-align: center;
+}
+
+#periodic-table {
+    display:flex;
+    flex-direction : column; /* Вертикальное расположение рядов */
+    grid-template-columns: repeat(18, 60px); /* Установите фиксированную ширину столбцов */
+}
+
+ 
+ .row {
+    display:flex; /* Горизонтальное расположение элементов в ряду */
+ }
+
+.element {
+    width: 60px; /* Фиксированная ширина для элементов */
+    height: 60px; /* Фиксированная высота для элементов */
+    border: 1px solid #4e543e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.element:hover {
+    background-color: #ada594; /* Цвет при наведении */
+}
+
+.tooltip {
+    display: none; /* Скрыть по умолчанию */
+    position: absolute; /* Позиционирование относительно родителя */
+    background-color: #4e543e; /* Цвет фона */
+    color: #f0ead6; /* Цвет текста */
+    padding: 5px; /* Отступы */
+    border-radius: 5px; /* Скругление углов */
+    white-space:nowrap; /* Позволяет переносу строк */
+}
+
+.empty {
+    width: 60px; /* Фиксированная ширина для пустых ячеек */
+    height: 60px; /* Фиксированная высота для пустых ячеек */
+}
+
+.element {
+    position: relative; /* Для правильного позиционирования подсказки */
+}
+
+/* Изменение позиционирования всплывающей подсказки */
+.element:hover .tooltip {
+    display: block; /* Показываем подсказку при наведении */
+}
+
+#color-legend {
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.color-item {
+    display: flex; /* Используем Flexbox для выравнивания */
+    align-items: center; /* Выравнивание по вертикали по центру */
+    margin-bottom: 10px; /* Отступ между строками */
+}
+
+.color-box {
+    width: 30px; /* Ширина ячейки цвета */
+    height: 30px; /* Высота ячейки цвета */
+    margin-right: 10px; /* Отступ справа от ячейки */
+}
