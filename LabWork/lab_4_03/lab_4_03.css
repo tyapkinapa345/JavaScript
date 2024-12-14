@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#toolbar {
+    margin-bottom: 10px;
+    text-align: center; /* Центрирование кнопок */
+}
+
+button {
+    background-color: #774e1e; /* Зеленый фон */
+    border: none; /* Убираем рамку */
+    color: white; /* Белый текст */
+    padding: 10px 15px; /* Отступы */
+    text-align: center; /* Центрирование текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block; /* Отображение кнопок в строку */
+    font-size: 14px; /* Размер шрифта */
+    margin: 5px; /* Отступ между кнопками */
+    cursor: pointer; /* Указатель при наведении */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+button:hover {
+    background-color: #4e2f0c; /* Более темный зеленый при наведении */
+}
+
+canvas {
+    border: 1.5px solid #402102;
+    display: block;
+    margin: 0 auto; /* Центрирование холста */
+}
