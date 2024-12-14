@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор ипотеки</title>
+    <link rel="stylesheet" href="lab_4_02.css">
+</head>
+<body>
+    <h1>Калькулятор ипотеки</h1>
+    <div id="calculator">
+        <label for="loanAmount">Сумма кредита:</label>
+        <input type="number" id="loanAmount" min="0" placeholder="Введите сумму кредита">
+        <div class="preset-buttons">
+            <button class="preset" data-amount="3000000">3M</button>
+            <button class="preset" data-amount="5000000">5M</button>
+            <button class="preset" data-amount="1000000">1M</button>
+        </div>
+
+        <label for="interestRate">Процентная ставка (%):</label>
+        <input type="number" id="interestRate" min="0" placeholder="Введите процентную ставку">
+        <div class="preset-buttons">
+            <button class="preset" data-rate="9">9%</button>
+            <button class="preset" data-rate="8.5">8.5%</button>
+            <button class="preset" data-rate="10">10%</button>
+        </div>
+
+        <label for="loanTerm">Срок кредита (лет):</label>
+        <input type="number" id="loanTerm" min="0" placeholder="Введите срок кредита">
+        <div class="preset-buttons">
+            <button class="preset" data-term="15">15 лет</button>
+            <button class="preset" data-term="20">20 лет</button>
+            <button class="preset" data-term="10">10 лет</button>
+        </div>
+
+        <button id="calculateBtn">Рассчитать</button>
+    </div>
+
+    <div id="result"></div>
+
+    <h2>График платежей</h2>
+    <table id="paymentSchedule">
+        <thead>
+            <tr>
+                <th>Месяц</th>
+                <th>Основной долг</th>
+                <th>Проценты</th>
+                <th>Ежемесячный платеж</th>
+                <th>Остаток долга</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="lab_4_02.js"></script>
+</body>
+</html>
