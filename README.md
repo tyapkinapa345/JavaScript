@@ -59,6 +59,6 @@ ________
 ## Лабораторная работа №6. Введение в TensorFlow.js
 
   1. [Задание](/LabWork/lab_6).
-       * [CSS-code](/LabWork/lab_6/lab_6.css).
-       * [HTML-code](/LabWork/lab_6/lab_6.html).
-       * [JS-code](/LabWork/lab_6/lab_6.js).
+       * [CSS-code](/LabWork/lab_6/style.css).
+       * [HTML-code](/LabWork/lab_6/index.html).
+       * [JS-code](/LabWork/lab_6/index.js).
