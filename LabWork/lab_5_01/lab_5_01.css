@@ -1,1 +1,66 @@
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 300px; /* Ширина контейнера */
+    height: 300px; /* Высота контейнера */
+}
+
+.puzzle-piece {
+    background-size: cover; /* Обеспечиваем полное покрытие фона */
+    background-position: center; /* Центрируем изображение */
+    cursor: pointer;
+}
+
+.puzzle-piece.empty {
+    background-color: #ccc; /* Цвет пустой ячейки */
+}
+
+.puzzle-piece:hover {
+    opacity: 0.8; /* Эффект при наведении */
+}
+
+/* Стили для кнопок */
+button {
+    margin-top: 10px; /* Отступ сверху для всех кнопок */
+    padding: 10px 20px; /* Отступы внутри кнопок */
+    font-size: 16px; /* Размер шрифта */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+#check-button {
+    background-color: #79480c; /* Цвет фона кнопки "Проверить сборку" */
+}
+
+#check-button:hover {
+    background-color: #512f05; /* Темнее при наведении на кнопку "Проверить" */
+}
+
+#shuffle-button {
+    background-color: #b9ad22; /* Цвет фона кнопки "Перемешать" */
+}
+
+#shuffle-button:hover {
+    background-color: #8d8316; /* Темнее при наведении на кнопку "Перемешать" */
+}
