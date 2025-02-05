@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сапер</title>
+    <link rel="stylesheet" href="lab_5_03.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Игра "Сапер"</h1>
+        <div class="game-container">
+            <div class="controls">
+                <label for="rows">Количество строк:</label>
+                <input type="number" id="rows" min="5" max="20" value="10">
+                
+                <label for="cols">Количество столбцов:</label>
+                <input type="number" id="cols" min="5" max="20" value="10">
+                
+                <label for="mines">Количество мин:</label>
+                <input type="number" id="mines" min="1" max="100" value="20">
+                
+                <button id="start-button">Начать игру</button>
+            </div>
+            
+            <div id="board"></div> <!-- Игровое поле -->
+        </div>
+        
+        <div id="message"></div> <!-- Сообщения для игрока -->
+    </div>
+    
+    <script src="lab_5_03.js"></script>
+</body>
+</html>
