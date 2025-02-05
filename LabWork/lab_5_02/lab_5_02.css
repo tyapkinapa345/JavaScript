@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#notificationContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+}
+
+.container {
+    text-align: center;
+}
+
+#notification-container {
+    margin-top: 20px;
+}
+
+.notification {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.notification.info {
+    background-color: #cce5ff; /* Голубой фон */
+    color: #004085; /* Темно-синий текст */
+}
+
+.notification.success {
+    background-color: #d4edda; /* Зеленый фон */
+    color: #155724; /* Темно-зеленый текст */
+}
+
+.notification.warning {
+    background-color: #ffeacc; /* Оранжевый фон */
+    color: #854900; /* Темно-оранжевый текст */
+}
+
+.notification.error {
+    background-color: #f8d7da; /* Красный фон */
+    color: #721c24; /* Темно-красный текст */
+}
+
+.close-button {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем рамку */
+    color: white; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+/* Стили для кнопок добавления уведомлений */
+button {
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта */
+    color: white; /* Цвет текста */
+    background-color: #a86e17; /* Цвет фона кнопки */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+}
+
+button:hover {
+    background-color: #633e06; /* Темнее при наведении */
+}
